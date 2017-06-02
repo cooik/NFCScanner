@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AllTagFragment">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_productid"
+        android:layout_below="@id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:text="产品编号"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/productName"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/tv_productid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/productId"
+            android:text="null"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_productid"
+        android:layout_width="match_parent"
+        android:id="@+id/ll_prodectname"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:text="产品名称"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/productName"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/productId"
+            android:text="null"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/ll_prodectname"
+        android:visibility="visible"
+        android:id="@+id/iv_isreal"
+       android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <TextView
+        android:layout_below="@id/iv_isreal"
+        android:id="@+id/tv_isreal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始鉴定"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal"
+        />
+
+
+</RelativeLayout>
